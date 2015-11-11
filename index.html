@@ -16,11 +16,10 @@ if(isset($_POST['search'])){
 			$fname = $row['firstname'];
 			$lname = $row['lastname'];
 			$id = $row['ic'];
-			$output .= '<div>'.$fname.' '.$lname.' </div> ';
-		}	
+			$output .= '<div>'.$fname.''.$lname.'</div>';
+		}
 	}
-}
-?>
+}	
 
 <html>
 <header><title>doubisearch</title></header>
