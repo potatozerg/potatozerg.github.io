@@ -16,7 +16,7 @@ if(isset($_POST['search'])){
 			$fname = $row['firstname'];
 			$lname = $row['lastname'];
 			$id = $row['ic'];
-			$output .= '<div> '.$fname.' '.$lname.' </div> ';
+			$output .= '<div>'.$fname.' '.$lname.' </div> ';
 		}	
 	}
 }
@@ -28,7 +28,7 @@ if(isset($_POST['search'])){
 
 <form action="index.php" method="post">
 	<input type="text" name="search" placeholder="please enter here"/>
-	<input type="submit" value="confirm“/>
+	<input type="submit" value="confirm"/>
 </form>
 
 <?php.print("$output");
