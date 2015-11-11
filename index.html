@@ -17,26 +17,18 @@ if(isset($_POST['search'])){
 			$lname = $row['lastname'];
 			$id = $row['ic'];
 			$output .= '<div> '.$fname.' '.$lname.' </div> ';
-		}
-	
-	
-	
+		}	
 	}
-
-
-
 }
-
 ?>
 
 <html>
-<header><title>This is title</title></header>
+<header><title>doubisearch</title></header>
 <body>
-Hello world
 
 <form action="index.php" method="post">
 	<input type="text" name="search" placeholder="please enter here"/>
-	<input type="submit" value="confirm/>
+	<input type="submit" value="confirm“/>
 </form>
 
 <?php.print("$output");
